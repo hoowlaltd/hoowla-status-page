@@ -49,6 +49,13 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
+        "post-install-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=cachet",
+            "@php artisan vendor:publish --tag=cachet-assets --ansi --force",
+            "@php artisan filament:assets --ansi",
+            "@php artisan migrate --graceful --ansi"
+        ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "@php artisan vendor:publish --tag=cachet-assets --ansi --force",
