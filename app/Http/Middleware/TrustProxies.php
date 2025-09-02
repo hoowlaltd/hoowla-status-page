@@ -19,6 +19,13 @@ use Symfony\Component\HttpFoundation\Response;
 class TrustProxies extends LaravelTrustProxies
 {
     /**
+     * The trusted proxies for this application.
+     *
+     * @var array<int, string>|string|null
+     */
+    protected $proxies = '*'; // Trust all proxies (safe if you only expose via Northflank)
+
+    /**
      * Handle an incoming request.
      *
      * @param \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response) $next
