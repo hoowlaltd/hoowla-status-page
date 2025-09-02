@@ -53,8 +53,7 @@
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "@php artisan vendor:publish --tag=cachet",
             "@php artisan vendor:publish --tag=cachet-assets --ansi --force",
-            "@php artisan filament:assets --ansi",
-            "@php artisan migrate --force --ansi"
+            "@php artisan filament:assets --ansi"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
